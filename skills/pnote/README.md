@@ -33,7 +33,7 @@ npm install -g pnote
 
 #### 2. Authenticate
 
-Get your Personal Access Token from [PromptNote Settings](https://app.promptnoteapp.com/settings), then:
+[Generate an API token](https://app.promptnoteapp.com/?action=mcp-access) from the web app, then:
 
 ```bash
 pnote auth token pn_your_token_here
