@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/pnote)](https://www.npmjs.com/package/pnote)
 
-Claude Code skill for [PromptNote](https://promptnoteapp.com/) CLI.
+Agent skill for [PromptNote](https://promptnoteapp.com/) CLI. Works with Claude Code, Cursor, Windsurf, and [40+ agents](https://skills.sh/).
 
 ## Installation
 
