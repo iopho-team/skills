@@ -10,17 +10,17 @@ Agent skill for [PromptNote](https://promptnoteapp.com/) CLI. Works with Claude 
 
 **Interactive** (choose agents and confirm):
 ```bash
-npx skills add iopho-team/skills --skill pnote
+npx skills add iopho-team/iopho-skills --skill pnote
 ```
 
 **Non-interactive** (install to all agents, skip prompts):
 ```bash
-npx skills add iopho-team/skills --skill pnote --all
+npx skills add iopho-team/iopho-skills --skill pnote --all
 ```
 
 **Global install** (user-level, available across all projects):
 ```bash
-npx skills add iopho-team/skills --skill pnote -g -y
+npx skills add iopho-team/iopho-skills --skill pnote -g -y
 ```
 
 ### Option B: Manual Installation
