@@ -22,12 +22,17 @@ Manage your prompts and notes from the terminal. Requires `npm install -g pnote`
 - `pnote search "query"` - search notes and snippets
 
 **Read & Copy:**
-- `pnote notes get <id>` - get note with snippet
-- `pnote snippet copy <id>` - copy to clipboard
+- `pnote notes get <id>` - get note with all snippet versions
+- `pnote notes get <id> --latest` - get note with only latest snippet
+- `pnote notes snippet <id>` - show latest snippet (pipe-friendly)
+- `pnote notes snippet list <id>` - show all snippet versions
+- `pnote notes snippet copy <id>` - copy latest to clipboard
 
 **Create & Manage:**
 - `pnote notes create "Title"` - create note
-- `pnote snippet add <id>` - add snippet from stdin
+- `pnote notes snippet add <id>` - add new snippet version from stdin
+- `pnote notes snippet update <snippet-id>` - update snippet from stdin
+- `pnote notes snippet favorite <snippet-id>` - toggle favorite
 - `pnote tags rename "old" "new"` - rename tag
 
 **Agent Skills Sync (v0.2.0+):**
