@@ -46,7 +46,7 @@ In Claude Code, use `/pnote` to invoke:
 ```
 /pnote notes
 /pnote search "AI art"
-/pnote snippet copy abc123
+/pnote notes snippet copy abc123
 ```
 
 ## What This Skill Does
@@ -63,9 +63,13 @@ This skill wraps the `pnote` CLI to let Claude help you:
 | Command | Description |
 |---------|-------------|
 | `pnote notes` | List all notes |
-| `pnote notes get <id>` | Get note with snippet |
+| `pnote notes get <id>` | Get note with all snippet versions |
+| `pnote notes get <id> --latest` | Get note with only latest snippet |
+| `pnote notes snippet <id>` | Show latest snippet (pipe-friendly) |
+| `pnote notes snippet list <id>` | Show all snippet versions |
+| `pnote notes snippet copy <id>` | Copy latest snippet to clipboard |
+| `pnote notes snippet add <id>` | Add new snippet version from stdin |
 | `pnote search <query>` | Search notes and snippets |
-| `pnote snippet copy <id>` | Copy snippet to clipboard |
 | `pnote tags` | List all tags |
 | `pnote skills` | List skills in cloud |
 | `pnote skills pull` | Download skills to `~/.claude/skills/` |
