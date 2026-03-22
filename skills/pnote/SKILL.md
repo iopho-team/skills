@@ -164,10 +164,18 @@ Notes with `note_type=skill` and title `skill-name/filename.md` are agent skill 
 
 ```bash
 pnote skills                            # List skills in cloud
-pnote skills pull                       # Download all to ~/.claude/skills/
-pnote skills pull <name>                # Download specific skill
+pnote skills pull                       # Pull all globally (~/.agents/skills/ + symlinks)
+pnote skills pull <name>                # Pull a specific skill globally
+pnote skills pull --project             # Pull project-level (.agents/skills/ + .claude/skills/ etc.)
+pnote skills pull --project <name>      # Pull specific skill project-level
+pnote skills pull --dry-run             # Preview without writing
 pnote skills push <dir>                 # Upload local skill directory to cloud
 ```
+
+**Scope behaviour:**
+- **Global (default):** writes to `~/.agents/skills/<name>/`, symlinks into `~/.claude/skills/`, `~/.windsurf/skills/`, `~/.augment/skills/` etc. for every agent installed on the system. Layout matches `npx skills` exactly — the two coexist without conflict.
+- **Project (`--project`):** same layout but relative to cwd (`.agents/skills/`, `.claude/skills/`, etc.). Use when skills should be scoped to a single project.
+- **Custom (`--dir <path>`):** writes files directly to `<path>/<name>/`, no symlinks. For manual control.
 
 ---
 

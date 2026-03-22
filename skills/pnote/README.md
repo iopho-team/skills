@@ -72,7 +72,9 @@ This skill wraps the `pnote` CLI to let Claude help you:
 | `pnote search <query>` | Search notes and snippets |
 | `pnote tags` | List all tags |
 | `pnote skills` | List skills in cloud |
-| `pnote skills pull` | Download skills to `~/.claude/skills/` |
+| `pnote skills pull` | Pull all skills globally (`~/.agents/skills/` + agent symlinks) |
+| `pnote skills pull <name>` | Pull a specific skill globally |
+| `pnote skills pull --project` | Pull project-level (`.agents/skills/` + `.claude/skills/` etc.) |
 | `pnote skills push <dir>` | Upload a local skill to cloud |
 
 See `pnote --help` for full documentation.
