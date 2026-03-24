@@ -13,7 +13,7 @@ Manage your Reedle reading library and extract content from the terminal or as a
 
 **Tool preference:** Use `reedle` CLI (Bash) for all operations — it's faster, token-efficient, and composable with `grep`, `jq`, and pipes. Use `mcp__reedle__*` MCP tools as fallback when the CLI is not installed or when complex multi-step MCP tool chains are more appropriate.
 
-**Install:** `cd apps/reedle-cli && pnpm build && npm install -g .` (monorepo) or `npm install -g reedle`
+**Install:** `npm install -g reedle-cli`
 
 **Auth:** Generate a CLI token at `app.reedle.iopho.com → Settings → Integrations → CLI Token`, then:
 ```bash
