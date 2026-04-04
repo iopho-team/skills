@@ -15,7 +15,7 @@ Skills for iopho's own products — reading, notes, and knowledge management.
 | [reedle](skills/reedle/) | Intelligent reading library CLI — save/read articles, YouTube & Bilibili transcripts, semantic search, highlights, flashcard decks<br>`npx skills add iopho-team/iopho-skills --skill reedle` · _updated 2026-03-22_ |
 | [pnote](skills/pnote/) | [PromptNote](https://promptnoteapp.com/) CLI for managing prompts, notes, and snippets<br>`npx skills add iopho-team/iopho-skills --skill pnote` · _updated 2026-03-22_ |
 
-## iopho Video Skills
+### iopho Video Skills
 
 AI-powered product video production pipeline — from research to final render.
 
