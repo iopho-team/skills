@@ -15,7 +15,13 @@ Skills for iopho's own products — reading, notes, and knowledge management.
 | [reedle](skills/reedle/) | Intelligent reading library CLI — save/read articles, YouTube & Bilibili transcripts, semantic search, highlights, flashcard decks<br>`npx skills add iopho-team/iopho-skills --skill reedle` · _updated 2026-03-22_ |
 | [pnote](skills/pnote/) | [PromptNote](https://promptnoteapp.com/) CLI for managing prompts, notes, and snippets<br>`npx skills add iopho-team/iopho-skills --skill pnote` · _updated 2026-03-22_ |
 
-### Video Production — Orchestrator
+## iopho Video Skills
+
+AI-powered product video production pipeline — from research to final render.
+
+📖 **Docs:** [iopho.com/docs/video-skills](https://iopho.com/docs/video-skills)
+
+#### Video Production — Orchestrator
 
 Start here. The director skill guides you through the full pipeline and routes to all other skills.
 
@@ -23,7 +29,7 @@ Start here. The director skill guides you through the full pipeline and routes t
 |-------|-------------|
 | [iopho-video-director](skills/iopho-video-director/) | Master orchestrator: 4-phase pipeline (Context → Storyboard → Production → Visual QA)<br>`npx skills add iopho-team/iopho-skills --skill iopho-video-director` · _updated 2026-03-19_ |
 
-### Video Production — Specialized Skills
+#### Video Production — Specialized Skills
 
 Individual skills for each stage of the pipeline. Can be used standalone or invoked by the orchestrator.
 
